@@ -1,0 +1,83 @@
+
+body{
+    background-color: rgb(48, 47, 47);
+    margin-top: 7%;
+    margin-left: 25%;
+}
+
+.container{
+    background-color: rgb(23, 26, 32);
+    border: rgb(15, 15, 17) 1px solid;
+    padding: 150px;
+    width: 35%;
+    height: 138px;
+    max-width: 400px;
+    min-width: 300px;
+    max-height: 138px;
+    min-height: 100px;
+}
+
+.container div{
+   margin-top: 30px;
+   right: 100px;
+   position: relative;
+}
+
+.input-login-senha{
+    background-color: rgb(39, 43, 53);
+    width: 250px;
+    height: 35px;
+    border: 5px rgb(39, 43, 53);
+    color: white;
+}
+
+.login-label{
+    color: rgb(46, 102, 255);
+    position: relative;
+    bottom: 32px;
+    left: 44px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
+}
+
+.senha-label{
+    color: rgb(46, 102, 255);
+    position: relative;
+    bottom: 32px;
+    left: 41px;
+    margin-right: -5px;
+}
+
+.lembre-se-box{
+    margin-left: 12.5%;   
+}
+
+.bnt-iniciar-sesao{
+    background-color: rgb(69, 179, 212);
+    border: rgb(69, 179, 212);
+    margin: 0 30%;
+    padding: 15px 20px;
+    border-radius: 2px;
+    color: white;
+
+}
+
+.bnt-iniciar-sesao:active{
+    background-color: rgba(69, 179, 212, 0.671);
+    border-radius: none;
+}
+
+.steam-logo{
+   position: absolute;
+   margin-top: -75px;
+   left: 31%;
+}
+
+.QRcode{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: -70%;
+    margin-left: 100%;
+    border-radius: 10%;
+}
