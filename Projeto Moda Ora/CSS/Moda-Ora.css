@@ -1,0 +1,138 @@
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --cor-texto: #555;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+}
+
+@font-face {
+    font-family: 'Viaoda Libre';
+    src: url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+}
+
+body {
+    margin: 0;
+    color: #555;
+}
+
+.header {
+    display: flex;
+    background-color: #162028;
+    color: var(--cor-texto);
+    max-width: 130vw;
+    min-width: 300px;
+    max-height: 100vh;
+}
+
+.header__logo {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.1em;
+    margin: auto 3em;
+    font-family: 'Viaoda Libre', serif;
+}
+
+.header nav ul {
+    display: flex;
+    margin-top: 1.2em;
+    margin-left: 20em;
+    gap: 16px;
+}
+
+.header nav li {
+    display: inline-block;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header a {
+    color: #425564;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.img__topo {
+    width: 100%;
+    height: 30%;
+}
+
+
+
+.texto__principal h1 {
+    text-align: center;
+    font-family: 'Viaoda Libre', serif;
+    font-size: 4em;
+}
+
+article p {
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-family: 'Viaoda Libre', serif;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 5.5em;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+.article {
+    background-color: #003d52;
+    padding: 05px 100px;
+    color: white;
+    padding-right: 20em;
+}
+
+.article h1 {
+    text-align: left;
+    font-family: 'Viaoda Libre', serif;
+}
+
+.article p {
+    text-align: left;
+}
+
+.footer {
+    background-color: #0b171f;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 0;
+
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
+    top: 100px;
+    padding-top: 3.5%;
+    font-size: 1.5em;
+}
