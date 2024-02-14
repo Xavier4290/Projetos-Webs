@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --cabecalho-roda-pe: #1C1818;
+    --cor-btn: #0276FE;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.btn {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--cor-btn);
+    border: 1px solid;
+    background-color: inherit;
+    padding: 1em;
+}
+
+.cabecalho {
+    background-color: var(--cabecalho-roda-pe);
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 5em;
+}
+
+.container-header img {
+    width: 120px;
+    height: 120px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.6em;
+    background-color: #000000;
+    padding: 5em 10em;
+}
+
+.container-max-width {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 60em;
+    margin: auto 20em;
+}
+
+.cards {
+    color: var(--cor-btn);
+    padding: 5rem;
+    background-color: #201f1f;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+
+}
+
+nav a {
+    padding: 1rem;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #0276FE;
+    border: 1px solid;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: #0276FE;
+    border-color: #0276FE;
+    color: #fafafa;
+    width: 4em;
+}
