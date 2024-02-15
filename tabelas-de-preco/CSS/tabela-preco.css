@@ -2,19 +2,22 @@
 
 :root {
     --cabecalho-roda-pe: #1C1818;
-    --cor-btn: #0276FE;
+    --cor-btn: snow;
 }
 
 html {
     font-size: 62.5%;
+
 }
+
+
 
 .btn {
     font-family: "Lato", sans-serif;
     text-decoration: none;
     font-size: 1.8rem;
     color: var(--cor-btn);
-    border: 1px solid;
+    border: 1px solid #0276FE;
     background-color: inherit;
     padding: 1em;
 }
@@ -47,8 +50,8 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1.6em;
-    background-color: #000000;
     padding: 5em 10em;
+    margin: 0;
 }
 
 .container-max-width {
@@ -57,21 +60,49 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 60em;
-    margin: auto 20em;
+    margin: 1em 2em;
+
 }
 
-.cards {
-    color: var(--cor-btn);
-    padding: 5rem;
-    background-color: #201f1f;
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
+    height: 340px;
+}
 
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: snow;
+    padding: 5em;
+    background-color: #201f1f;
+}
+
+.cards p {
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+.cards h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.cards a {
+    margin: 0;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 1em;
-
 }
 
 nav a {
