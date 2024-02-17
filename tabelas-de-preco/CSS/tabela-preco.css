@@ -54,6 +54,7 @@ html {
     margin: 0;
 }
 
+
 .container-max-width {
     display: flex;
     justify-content: center;
@@ -61,7 +62,6 @@ html {
     flex-wrap: wrap;
     min-width: 60em;
     margin: 1em 2em;
-
 }
 
 .container-img {
@@ -69,10 +69,12 @@ html {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    width: 140px;
-    height: 340px;
 }
 
+.container-img img {
+    width: 345px;
+    height: 500px;
+}
 
 .cards {
     display: flex;
@@ -83,6 +85,8 @@ html {
     color: snow;
     padding: 5em;
     background-color: #201f1f;
+    width: 215px;
+    height: 400px;
 }
 
 .cards p {
