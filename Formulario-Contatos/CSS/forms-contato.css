@@ -1,0 +1,92 @@
+:root {
+    --main-font-text: font-family: Arial, Helvetica, sans-serif;
+    --color-font: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+form {
+    width: 30em;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: var(--color-font);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    padding-top: 2.2em;
+    font-family: var(--main-font-text);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1em;
+    font-family: var(--main-font-text);
+    font-weight: 600;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 40px;
+    border-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--color-font);
+
+}
+
+input[type="button"] {
+    background-color: rgb(51, 48, 48);
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    padding: 1em 1em;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+input:not(:placeholder-shown) {
+    border-bottom-color: green;
+}
+
+input:placeholder-shown {
+    border-bottom-color: grey;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: var(--color-font);
+    margin-bottom: 2em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+textarea:not(:placeholder-shown) {
+    border-bottom-color: green;
+}
+
+textarea:placeholder-shown {
+    border-bottom-color: grey;
+}
