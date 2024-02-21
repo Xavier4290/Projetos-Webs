@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --cor-pradao: #3a68b7;
+    --txt-padrao: font-family: "Roboto", sans-serif,
+        font-weight: 300,
+        font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cor-pradao);
+}
+
+.formulario {
+    background-color: white;
+    width: 30em;
+    padding: 2em;
+}
+
+.fieldset {
+    border: none;
+    padding: none;
+    margin: none;
+}
+
+.legend {
+    color: var(--cor-pradao);
+}
+
+.input__usuario,
+.input__senha,
+.usuario,
+.senhas {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    padding-bottom: 0.75em;
+    box-sizing: border-box;
+    font-family: var(--txt-padrao);
+}
+
+.login__cadastro {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 1em;
+}
+
+.esqueceu__senha {
+    margin-left: auto;
+}

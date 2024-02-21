@@ -10,17 +10,19 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: #181818;
 }
 
 form {
     width: 30em;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: #0e1010;
     color: var(--color-font);
 }
 
 fieldset {
     border: none;
+    padding: none;
+    margin: none;
 }
 
 legend {
@@ -29,6 +31,7 @@ legend {
     font-family: var(--main-font-text);
     font-weight: bold;
     font-size: 1.5em;
+    color: #8e999a;
 }
 
 input,
@@ -42,17 +45,14 @@ label {
 }
 
 input {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, .3);
     height: 40px;
     border-color: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: 2px solid transparent;
     color: var(--color-font);
-
 }
 
-input[type="button"] {
+input[type="submit"] {
     background-color: rgb(51, 48, 48);
     border: none;
     width: fit-content;
@@ -63,30 +63,51 @@ input[type="button"] {
     text-align: center;
 }
 
-input:not(:placeholder-shown) {
-    border-bottom-color: green;
-}
-
-input:placeholder-shown {
-    border-bottom-color: grey;
-}
+/* input:invalid:focus,
+textarea:invalid:focus {
+    border-bottom-color: #bbb;
+} */
 
 textarea {
     display: block;
     resize: none;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, .3);
     color: var(--color-font);
     margin-bottom: 2em;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: 2px solid transparent;
 }
 
-textarea:not(:placeholder-shown) {
+input:focus,
+textarea:focus {
+    background-color: black;
+}
+
+input:invalid,
+textarea:invalid {
+    border-bottom-color: #ff000d;
+}
+
+input:valid, textarea:valid {
+    border-bottom-color: green;
+}
+
+
+
+/* input:not(:placeholder-shown) {
+    border-bottom-color: green;
+} */
+
+/* input:placeholder-shown, textarea:placeholder-shown{
+    border-bottom-color: #bbb;
+}  */
+
+
+
+/* textarea:not(:placeholder-shown) {
     border-bottom-color: green;
 }
 
 textarea:placeholder-shown {
-    border-bottom-color: grey;
-}
+    border-bottom-color: #bbb;
+} */
