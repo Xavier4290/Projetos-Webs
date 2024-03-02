@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form {
+    width: 20em;
+    padding: 1.5em;
+    
+}
+
+.form__field {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.form__label,
+.form__input {
+    display: block;
+    width: 100%;
+    height: 27px;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+.form__label {
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bnt {
+    margin-right: auto;
+}
