@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: var(--cor-pradao);
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
     font-style: normal;
 }
 
@@ -35,52 +33,52 @@ body {
     color: var(--cor-pradao);
     margin-bottom: 1em;
     font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
 }
 
-.input__usuario,
-.input__senha,
-.input__email,
-.label_usuario,
-.label_email,
-.label_senhas {
+.form__input,
+.label__form {
     display: block;
     width: 100%;
     padding-bottom: 0.75em;
     box-sizing: border-box;
-    font-family: var(--txt-padrao);
-}
-
-.login__cadastro {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 1.2em;
 }
 
 .esqueceu__senha {
     margin-left: auto;
 }
 
-.label_usuario,
-.label_email,
-.label_senhas {
+.label__form {
     font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
 }
 
-.input__usuario,
-.input__email,
-.input__senha {
-    border: 2px solid transparent;
+.form__input {
+    border: 0 solid transparent;
     border-bottom: 1px solid var(--cor-pradao);
     margin-top: 0.90em;
     height: 35px;
     font-size: 1em;
 }
 
-.input__usuario:focus,
-.input__email:focus,
-.input__senha:focus {
+.form__input:focus {
     outline: 1px solid var(--cor-pradao);
+    padding: 5px;
+    transition: .08s;
+}
+
+.login__cadastro {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.login__cadastro {
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-pradao);
+    text-decoration: none;
 }
 
 .btn {
@@ -94,27 +92,26 @@ body {
     width: fit-content;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.login__cadastro .cadastrar {
-    font-family: 'Roboto', sans-serif;
-    color: var(--cor-pradao);
-    text-decoration: none;
-}
-
-.cadastrar {
-    margin-left: 1em;
+.btn-cadastrar {
     margin-right: auto;
     text-transform: uppercase;
+    color: var(--cor-pradao);
+    background-color: white;
 }
 
-.login__cadastro .esqueceu__senha {
+.btn__aside {
     font-size: 0.75em;
-    margin: 0;
+    background-color: white;
+    color: var(--cor-pradao);
+    text-decoration: underline;
 }
 
 .span {
     color: black;
     font-size: 0.75em;
     margin-left: auto;
+    font-family: 'Roboto', sans-serif;
 }
