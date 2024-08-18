@@ -8,7 +8,6 @@ function adicionarTarefa(){
 }
 
 function removeTarefa(){
-    const deletTarefa = document.querySelector("#listaTarefa li");
-    deletTarefa.remove();
-
+    const deleteTarefa = document.querySelector("#listaTarefa li");
+    deleteTarefa.remove();
 }
