@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="DivLista">
+        <h1>Lista de Tarefas</h1>
+        <ol id="listaTarefa">
+            <li>Comprar Peças do PC</li>
+            <li>Aprender JS</li>
+            <li>Comprar cabo de rede</li>
+        </ol>
+
+            <label class="tarefas"> Adicionar uma Tarefa
+                <input type="text" name="tarefas" id="tarefas">
+                <button type="button" onclick="adicionarTarefa()" class="btn">Adicionar</button>
+                <button type="button" onclick="removerTarefa()" class="btn btn__excluir">Remover</button>
+            </label>        
+    </div>
+    <script src="JS/addLista.js"></script>
+</body>
+</html>
