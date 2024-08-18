@@ -7,8 +7,8 @@ function adicionarTarefa(){
     lista.appendChild(novoItem);
 }
 
-function removerTarefa(){
-    const remover = document.querySelector("#listaTarefa li");
-    remover.remove();
+function removeTarefa(){
+    const deletTarefa = document.querySelector("#listaTarefa li");
+    deletTarefa.remove();
 
 }
