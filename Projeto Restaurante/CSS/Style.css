@@ -22,6 +22,7 @@ h2{
 
 h3{
     font-family: var(--fonte-principal);
+    margin: 10px;
 }
 
 .main__header{
@@ -101,6 +102,7 @@ h3{
     margin-top: 2em;
     background-color: #1c1c1c;
     padding: .55em;
+    margin-bottom: 1em;
 }
 
 .article__highlight h2{
@@ -128,4 +130,49 @@ h3{
 
 .img__stars{
     width: 50px;
+}
+
+.img__stars2{
+    width: 40px;
+}
+
+.article__place{
+    background-color: var(--cor-principal);
+    padding: 1em;
+    width: 100%;
+}
+
+.container__places{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.img__places{
+    display: block;
+    width: 300px;
+}
+
+.cards__local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.cards__item{
+    border-radius: 5px;
+    background-color: white;
+    padding: .55em;
+    outline: 5px solid #1c1c1c;
+}
+
+.cards__item h2{
+    color: #1c1c1c;
+    margin: 10px;
+}
+.cards__item img{
+    width: 300px;
+    border-radius: 2px;
 }
