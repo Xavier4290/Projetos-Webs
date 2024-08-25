@@ -1,0 +1,131 @@
+
+:root{
+    --cor-principal: #fcefe6;    
+    --fonte-principal: "New Amsterdam", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-principal);
+}
+
+h1{
+    font-family: var(--fonte-principal);
+    margin: 0;
+}
+
+h2{
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+}
+
+h3{
+    font-family: var(--fonte-principal);
+}
+
+.main__header{
+    position: static;
+    background-color: var(--cor-principal);
+    display: flex;
+    padding: .75em;
+    justify-content: space-between;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.main__header img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__main-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__main-bar ul, li{
+    display: inline-block;
+}
+
+.link__main-bar{
+    color: black;
+    text-decoration: none;
+    border: .2em solid black;
+    padding: .75em;
+    border-radius: .4em;
+    background-color: white;
+    box-shadow: 0 4px black;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+}
+
+.cardapio{
+    padding: .55em;
+    display: block;
+    width: 5em;
+    position: relative;
+    margin-top: 1em;
+}
+
+.nav__test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido__mains{
+    border: none;
+    background-color: var(--cor-principal);
+   
+}
+.pedido__mains option{
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 1em;
+}
+
+.main__content{
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: auto;
+}
+
+.article__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article__highlight{
+    margin-top: 2em;
+    background-color: #1c1c1c;
+    padding: .55em;
+}
+
+.article__highlight h2{
+    color: white;
+}
+
+.container__highlight-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: .75em;
+}
+
+.highlight__img{
+    padding: .20em;
+    border-radius: 5px;
+    background-color: var(--cor-principal);
+}
+
+.hamburguer{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.img__stars{
+    width: 50px;
+}
