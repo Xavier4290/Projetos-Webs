@@ -81,7 +81,6 @@ h3{
 .pedido__mains option{
     background-color: var(--cor-principal);
     border: none;
-    border-radius: 1em;
 }
 
 .main__content{
@@ -158,6 +157,7 @@ h3{
     justify-content: center;
     align-items: center;
     gap: 1em;
+    flex-basis: auto;
 }
 
 .cards__item{
@@ -175,3 +175,6 @@ h3{
     width: 300px;
     border-radius: 2px;
 }
+
+
+
