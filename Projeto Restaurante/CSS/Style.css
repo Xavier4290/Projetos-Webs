@@ -24,6 +24,10 @@ h3{
     margin: 10px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .main__header{
     position: static;
     background-color: var(--cor-principal);
@@ -45,6 +49,11 @@ h3{
 
 .nav__main-bar ul, li{
     display: inline-block;
+    transition: 1s;
+}
+
+.nav__main-bar li:hover{
+    transform: scale(1.2) translateX(-1px);
 }
 
 .link__main-bar{
@@ -65,6 +74,11 @@ h3{
     width: 5em;
     position: relative;
     margin-top: 1em;
+    transition: 1s;
+}
+
+.cardapio:hover{
+    transform: scale(1.2);
 }
 
 .nav__test{
@@ -101,7 +115,7 @@ h3{
     margin-top: 5em;
     margin-bottom: 5em;
     background-color: #1c1c1c;
-    padding: .55em;
+    padding: .85em;
     margin-bottom: 1em;
 }
 
@@ -121,6 +135,11 @@ h3{
     padding: .20em;
     border-radius: 5px;
     background-color: var(--cor-principal);
+    transition: 1s;
+}
+
+.highlight__img:hover{
+    transform: scale(1.1);
 }
 
 .hamburguer{
@@ -180,24 +199,35 @@ h3{
     border-radius: 2px;
 }
 
+.information{
+    border-top: 3px solid #1c1c1c
+}
+
 .container__information{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    width: 100%;
+    margin-top: 5em;
+    height: 12em;
     gap: 5em;
 }
+
 
 .container__information img{
     width: 144px;
     height: 120px;
 }
 
-footer{
-    margin-top: 10em;
-    border-top: 3px solid #1c1c1c;
+.item__information{
+    padding: 2em 5em 2em 5em;
+    transition: background 1s;
 }
+
+.item__information:hover{
+    background-color: hsla(0, 6%, 25%, 0.1);
+    border-radius: 5px;
+}
+
 
 .sub-title__information{
     font-family: var(--fonte-principal);
@@ -210,3 +240,63 @@ footer{
     text-align: center;
 }
 
+.container__social-midia{
+    margin-top: 9em;
+    padding: 1em;
+    background-color: #1c1c1c; 
+}
+.title-social__midia{
+    margin: 0;    
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+}
+ul.social__midia {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;       /* Remove o espaçamento padrão da lista */
+    text-align: left; /* Alinha os itens da lista à esquerda */
+    align-self: auto;
+}
+
+.social__midia{
+    display: flex;
+    flex-direction: column;
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    gap: 5px;
+    font-family: var(--fonte-principal);
+    text-align: left;
+}
+
+.social__midia{
+    flex: 1;
+}
+
+.social__midia svg{
+    width: 50px;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.social__midia a{
+    color: white;
+}
+
+.p-developed{
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+footer{
+    padding: 1em;
+    background-color: #131313; 
+}
+
+/* Efeito pedidos 
+.pedidos__img:hover{
+    transform: translateX(80px) rotate(-45deg);
+    z-index: 1;
+}
+*/
