@@ -188,6 +188,11 @@ a{
     background-color: white;
     padding: .55em;
     outline: 5px solid #1c1c1c;
+    transition: 1s;
+}
+
+.cards__item:hover{
+    transform: scale(1.1);
 }
 
 .cards__item h2{
