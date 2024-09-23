@@ -40,6 +40,11 @@ a{
 .main__header img{
     display: inline-block;
     vertical-align: middle;
+    transition: .3s;
+}
+
+.main__header img:hover{
+    transform: rotate(-3deg);
 }
 
 .nav__main-bar{
