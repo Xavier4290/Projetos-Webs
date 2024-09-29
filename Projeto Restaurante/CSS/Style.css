@@ -1,6 +1,7 @@
 :root{
     --cor-principal: #fcefe6;    
     --fonte-principal: "New Amsterdam", sans-serif;
+    --cor-fonte: white;
 }
 
 body{
@@ -310,3 +311,34 @@ footer{
     z-index: 1;
 }
 */
+
+/* Cardapio */
+.main__burgues{
+    background-color: #1c1c1c;
+    padding: 4em;
+}
+
+.main__burgues h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.dishes__drinks{
+   display: flex;
+   color: var(--cor-fonte);
+   font-family: var(--fonte-principal);
+   margin-left: -1em;
+   font-size: 2rem;
+   gap: 1em;
+}
+
+.dishes__drinks a{
+    font-style: none;
+    color: var(--cor-fonte);
+ }
+
+.wave img{
+   width: 100%;
+}
+
+

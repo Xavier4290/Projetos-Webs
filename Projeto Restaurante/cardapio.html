@@ -4,15 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio</title>
-    <link rel="stylesheet" href="CSS/cardapio.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/select_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 <body>
-   <form class="form__menu">
-        <fieldset>
-            <img src="IMG/lanche1.jpg" alt="">
-            <img src="IMG/lanche1.jpg" alt="">
-            <button class="ver__mais">Ver mais</button>
-        </fieldset>
-   </form>
+    <header class="main__header">
+        <img src="https://cdn.prod.website-files.com/6389109252c0b4bcf51e3646/63909d0a22fb5635a1ff387e_Logo.svg">
+        <nav class="nav__main-bar">
+
+            <div class="custom-select">
+                <button class="select-button" role="combobox" aria-label="select button" aria-haspopup="listbox"
+                    aria-expanded="false" aria-controls="select-dropdown">
+                    <span class="selected-value">Escolher Pedido</span>
+                    <span class="arrow"></span>
+                </button>
+                <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                    <li role="option">
+                        <input type="radio" id="1-default-value" name="social-account" value=" " />
+                        <label for="1-default-value">Escolher Pedido</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="1-pedido-1" name="social-account" value="pedido1" />
+                        <label for="1-pedido-1">pedido 1</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="1-pedido-2" name="social-account" value="pedido2" />
+                        <label for="1-pedido-2">pedido 2</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="1-pedido-3" name="social-account" value="pedido3"/>
+                        <label for="1-pedido-3">pedido 3</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="custom-select pedido2">
+                <button class="select-button" role="combobox" aria-label="select button" aria-haspopup="listbox"
+                    aria-expanded="false" aria-controls="select-dropdown">
+                    <span class="selected-value">Escolher Pedido</span>
+                    <span class="arrow"></span>
+                </button>
+                <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                    <li role="option">
+                        <input type="radio" id="2-default-value" name="social-account" value=" " />
+                        <label for="2-default-value">Escolher Pedido</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="2-pedido-1" name="social-account" value="pedido10" />
+                        <label for="2-pedido-1">pedido 10</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="2-pedido-2" name="social-account" value="pedido20" />
+                        <label for="2-pedido-2">pedido 20</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="2-pedido-3" name="social-account" value="pedido30"/>
+                        <label for="2-pedido-3">do 30</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="custom-select pedido3">
+                <button class="select-button" role="combobox" aria-label="select button" aria-haspopup="listbox"
+                    aria-expanded="false" aria-controls="select-dropdown">
+                    <span class="selected-value">Escolher Pedido</span>
+                    <span class="arrow"></span>
+                </button>
+                <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                    <li role="option">
+                        <input type="radio" id="default-value" name="social-account" value=" " />
+                        <label for="default-value">Escolher Pedido</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="3-pedido-1" name="social-account" value="pedido100" />
+                        <label for="3-pedido-1">pedido 100</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="3-pedido-2" name="social-account" value="pedido200" />
+                        <label for="3-pedido-2">pedido 200</label>
+                    </li>
+                    <li role="option">
+                        <input type="radio" id="3-pedido-3" name="social-account" value="pedido300"/>
+                        <label for="3-pedido-3">do 300</label>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="list__main-bar">
+                <li><a href="" class="link__main-bar">Cardapio</a></li>
+                <li><a href="" class="link__main-bar">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__burgues">
+        <h1>Principais hamburguers</h1>
+        <ul class="dishes__drinks">
+            <li><a href="">Entradas</a></li>
+            <li><a href="">Principais</a></li>
+            <li><a href="">Especiais</a></li>
+            <li><a href="">Bebidas</a></li>      
+        </ul>
+    </main>
+    <div class="wave">
+        <img src="https://cdn.prod.website-files.com/6389109252c0b4bcf51e3646/638cbf87698caac1105744b1_Fill%20BottomLight.svg" alt="">
+    </div>
+
+    
 </body>
 </html>
