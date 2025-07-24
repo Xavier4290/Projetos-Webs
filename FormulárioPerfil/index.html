@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <form class="profile-forms">
+        <h1>Formulário</h1> 
+        <div class="profile-photo">
+            <img src="img/Thirteen.jpg" alt="" id="img-main" class="img-main">
+            <input type="file" name="" style="display: none;" id="input-img">
+        </div>
+
+        <label name="nome"> Nome
+            <input type="text" name="nome" id="input-nome">
+        </label>
+
+        <label name="email"> Email
+            <input type="email" name="email" id="input-email">
+        </label>
+
+        <label name="senha"> Senha
+            <input type="password" name="senha" id="input-senha">
+        </label>
+
+        <label name="tags"> Tags
+              <input type="text" name="tags" id="input-tag" class="input-tags">
+        </label>
+      
+        <ul id="ul-tags" class="ul-tags">
+            <li><span class="remove-tag">Teste </span></li>
+        </ul>
+
+        <div class="div-buttons">
+            <button class="btn">Salvar</button>
+            <button class="btn" id="btn-excluir">Excluir</button>
+        </div>
+    </form>
+<!-- 
+<div class="img-teste">
+    <div class="img-wrapper">
+        <img src="img/Thirteen.jpg" alt="Descrição da imagem">
+        <span class="texto-hover">Mudar</span>
+    </div>
+</div> -->
+
+    <script src="JS/index.js" type="module"></script>
+</body>
+</html>
