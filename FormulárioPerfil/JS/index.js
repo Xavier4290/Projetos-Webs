@@ -1,5 +1,8 @@
+import { verificarInputsVazio } from "./verificarInputVazio.js" 
+
 const imgMain = document.getElementById('img-main')
 const inputImg = document.getElementById('input-img')
+
 
 imgMain.addEventListener("click", () => {
     inputImg.click()
@@ -72,3 +75,5 @@ async function verificarTagsDisponiveis(tagTexto) {
             }, 1000)
         })
 }
+
+verificarInputsVazio();

@@ -165,3 +165,8 @@ body {
     width: 300px;
 }
 
+.msg-inputs__vazio {
+    display: none;
+    color: red;
+}
+

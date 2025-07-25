@@ -14,15 +14,15 @@
             <input type="file" name="" style="display: none;" id="input-img">
         </div>
 
-        <label name="nome"> Nome
+        <label name="nome" id="label-nome"> Nome
             <input type="text" name="nome" id="input-nome">
         </label>
 
-        <label name="email"> Email
+        <label name="email" id="label-email"> Email
             <input type="email" name="email" id="input-email">
         </label>
 
-        <label name="senha"> Senha
+        <label name="senha" id="label-senha"> Senha
             <input type="password" name="senha" id="input-senha">
         </label>
 
@@ -35,9 +35,11 @@
         </ul>
 
         <div class="div-buttons">
-            <button class="btn">Salvar</button>
+            <button class="btn" id="btn-salvar">Salvar</button>
             <button class="btn" id="btn-excluir">Excluir</button>
         </div>
+
+        <p class="msg-inputs__vazio">Preencha os campos vazio</p>
     </form>
 <!-- 
 <div class="img-teste">
