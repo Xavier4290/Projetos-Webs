@@ -66,14 +66,15 @@ ulTags.addEventListener("click", (evento) => {
     }
 })
 
-const tagDisponiveis = ['Espada', 'Dark Souls', 'Hades']
 
-async function verificarTagsDisponiveis(tagTexto) {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(tagDisponiveis.includes(tagTexto))
-            }, 1000)
-        })
+const tagsDisponiveis = ["Front-end", "Porgramação", "Data Science", "Full-stack", "HTML", "CSS", "JavaScript"]
+
+async function verificaTagsDisponiveis(tagTexto) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(tagsDisponiveis.includes(tagTexto)); // Verifica se a tag fornecida (tagTexto) existe dentro da lista de tags disponíveis
+        }, 1000)
+    })
 }
 
 verificarInputsVazio();

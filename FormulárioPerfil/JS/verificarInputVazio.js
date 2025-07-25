@@ -9,20 +9,20 @@ function validaEmail(email){
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return regex.test(email)
 }
+
 export function verificarInputsVazio() {
     btnSalvar.addEventListener("click", (evento) => {
     evento.preventDefault();
 
-    if(!inputNome.value  && !inputEmail.value  && !inputSenha.value ) {
-        msgInputVazio.style.display = "block"
-    } 
+        if(!inputNome.value.trim()  && !inputEmail.value.trim()  && !inputSenha.value.trim()) {
+            msgInputVazio.style.display = "block"
+        } 
 
-    if(!validaEmail(inputEmail.value)) {
-        alert("Email inválido")
-    } else {
-        alert("Email válido")
-    }
-
+        if(!validaEmail(inputEmail.value.trim())) {
+            alert("Email inválido")
+        } else {
+            alert("Email válido")
+        }
 
     })
 }
