@@ -95,10 +95,8 @@ btnSalvar.addEventListener("click", (evento)=> {
     const senhaDoUsuario = document.getElementById('input-senha').value
     const tagsDoFormulario = Array.from(ulTags.querySelectorAll('span')).map((tags) => tags.textContent)
 
-    console.log(nomeDoUsuario)
-    console.log(emailDoUsuario)
-    console.log(senhaDoUsuario)
-    console.log(tagsDoFormulario)
+    console.log(nomeDoUsuario, emailDoUsuario, senhaDoUsuario, tagsDoFormulario)
+   
 })
 
 export async function publicarFormulario(nomeDoUsuario, emailDoUsuario, senhaDoUsuario, tagsDoFormulario) {
