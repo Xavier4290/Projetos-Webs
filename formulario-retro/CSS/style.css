@@ -1,0 +1,92 @@
+:root {
+    --cor-fundo:#6A0DAD;
+    --cor-forms: #89CFF0;
+    --titulo-e-texto:#FFB6C1;
+    --cor-e-bordas-btn: #98FF98;
+    --hover-btn: #FF7F50;
+    --texto-inputs: #000000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: var(--cor-fundo);
+    font-family: 'Press Start 2P', monospace;
+}
+
+.forms {
+    width: 25em;
+    padding: 1.5em;
+    background-color: var(--cor-forms);
+}
+
+.forms h1 {
+    color: var(--titulo-e-texto);
+}
+
+.forms label, input {
+    display: block;
+    margin-bottom: 0;
+    color: var(--texto-inputs);
+}
+
+.forms label:nth-child(5){
+    margin-bottom: .5em;
+}
+
+.forms input{
+    padding: .3em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--hover-btn);
+    box-sizing: border-box;
+}
+
+.forms input:focus {
+    outline: none;
+    border: 1px solid var(--cor-e-bordas-btn);
+}
+
+.msg-inserir__informacao {
+    margin-top: 0;
+    margin-bottom: .8px;
+    padding: 0;
+    display: none;
+    color: red;
+}
+
+.insira-senha__novamente {
+    margin-top: 0;
+    margin-bottom: .8px;
+    padding: 0;
+    display: none;
+    color: red;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar__formulario {
+    padding: 1.1em;
+    background-color: var(--cor-e-bordas-btn);
+    border-color: var(--cor-e-bordas-btn);
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 1s, border 1s;
+}
+
+.btn-enviar__formulario:hover{
+    background-color: var(--hover-btn);
+    border-color: var(--hover-btn);
+}
+
+.btn-enviar__formulario:focus {
+    outline: none;
+    border:1px solid var(--hover-btn);
+}
