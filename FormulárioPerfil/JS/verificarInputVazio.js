@@ -1,3 +1,5 @@
+import {publicarFormulario} from '../JS/index.js'
+
 const btnSalvar = document.getElementById('btn-salvar')
 const inputNome = document.getElementById('input-nome')
 const inputEmail = document.getElementById('input-email')
@@ -19,10 +21,15 @@ export function verificarInputsVazio() {
         } 
 
         if(!validaEmail(inputEmail.value.trim())) {
-            alert("Email inválido")
+            // alert("Email inválido")
         } else {
-            alert("Email válido")
+            // alert("Email válido")
         }
 
     })
 }
+
+publicarFormulario(inputNome, inputEmail, inputSenha)
+
+
+

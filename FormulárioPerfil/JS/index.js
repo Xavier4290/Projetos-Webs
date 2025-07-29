@@ -46,15 +46,34 @@ inputImg.addEventListener("change", async(evento) => {
 const inputTags = document.getElementById('input-tag')
 const ulTags = document.getElementById('ul-tags')
 
-inputTags.addEventListener("keypress", (evento) => {
+const tagsDisponiveis = ["Front-end", "Porgramação", "Data Science", "Full-stack", "HTML", "CSS", "JavaScript", "Dark Souls", "Espada"]
+
+async function verificaTagsDisponiveis(tagTexto) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(tagsDisponiveis.includes(tagTexto)); // Verifica se a tag fornecida (tagTexto) existe dentro da lista de tags disponíveis
+        }, 500)
+    })
+}
+
+inputTags.addEventListener("keypress", async (evento) => {
     if(evento.key === "Enter") {
         evento.preventDefault();
         const tagTexto = inputTags.value.trim()
         if(tagTexto !== ""){
-            const tagNova = document.createElement('li')
-            tagNova.innerHTML = `<span class="remove-tag">${tagTexto}</span>`
-            ulTags.appendChild(tagNova)
-            inputTags.value = ""
+            try {
+                const tagExite = verificaTagsDisponiveis();
+                if(tagExite) {
+                     const tagNova = document.createElement('li')
+                     tagNova.innerHTML = `<span class="remove-tag">${tagTexto}</span>`
+                     ulTags.appendChild(tagNova)
+                     inputTags.value = ""
+                }
+            } catch (error){
+                console.error("Tag não encontrada")
+                alert("Tag não foi encontrada")
+            }
+           
         }
     }
 })
@@ -66,15 +85,34 @@ ulTags.addEventListener("click", (evento) => {
     }
 })
 
+const btnSalvar = document.getElementById('btn-salvar')
 
-const tagsDisponiveis = ["Front-end", "Porgramação", "Data Science", "Full-stack", "HTML", "CSS", "JavaScript"]
+btnSalvar.addEventListener("click", (evento)=> {
+    evento.preventDefault()
 
-async function verificaTagsDisponiveis(tagTexto) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(tagsDisponiveis.includes(tagTexto)); // Verifica se a tag fornecida (tagTexto) existe dentro da lista de tags disponíveis
-        }, 1000)
-    })
+    const nomeDoUsuario = document.getElementById('input-nome').value
+    const emailDoUsuario  = document.getElementById('input-email').value
+    const senhaDoUsuario = document.getElementById('input-senha').value
+    const tagsDoFormulario = Array.from(ulTags.querySelectorAll('span')).map((tags) => tags.textContent)
+
+    console.log(nomeDoUsuario)
+    console.log(emailDoUsuario)
+    console.log(senhaDoUsuario)
+    console.log(tagsDoFormulario)
+})
+
+export async function publicarFormulario(nomeDoUsuario, emailDoUsuario, senhaDoUsuario, tagsDoFormulario) {
+   return new Promise ((resolve, reject) => {
+    setTimeout(() => {
+        const deuCerto = Math.random > 0.5
+
+        if(deuCerto) {
+            resolve("Dados do usuário salvo com sucesso")
+        } else {
+            reject("Falha ao salvar os dados do usuário")
+        }
+    }, 2000)
+   })
 }
 
 verificarInputsVazio();
