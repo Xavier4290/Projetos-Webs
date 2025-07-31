@@ -70,6 +70,7 @@ body {
 .div-btn {
     display: flex;
     justify-content: center;
+    margin-top: .5em;
 }
 
 .btn-enviar__formulario {
@@ -88,5 +89,27 @@ body {
 
 .btn-enviar__formulario:focus {
     outline: none;
-    border:1px solid var(--hover-btn);
+    border:1px solid var(--cor-e-bordas-btn);
 }
+
+.div-descricao {
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+}
+
+.div-descricao textarea {
+      height: 8em;
+      width: 50%;
+      border: none;
+      border-bottom: 2px solid var(--hover-btn);
+      width: 100%;
+      box-sizing: border-box;
+}
+
+.div-descricao textarea:focus {
+    outline: none;
+    border:2px solid var(--cor-e-bordas-btn);
+}
+
+
