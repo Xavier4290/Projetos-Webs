@@ -114,3 +114,14 @@ export async function publicarFormulario(nomeDoUsuario, emailDoUsuario, senhaDoU
 }
 
 verificarInputsVazio();
+
+const btnExcluir = document.getElementById('btn-excluir')
+
+btnExcluir.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    const forms = document.querySelector(".profile-forms")
+    forms.reset();
+
+    fotoDePerfil.src = "./img/profile-icon.webp"
+})
