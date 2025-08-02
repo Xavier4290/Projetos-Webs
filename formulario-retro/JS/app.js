@@ -77,7 +77,7 @@ btnEnviar.addEventListener('click', (e) => {
 // enviaDadosParaDB(inputs)
 
 
-const ListaNomeEmUsos= ["Xavier4290", "yaay", "duh021"]
+const ListaNomeEmUsos= await verificarNomes(["Xavier4290", "yaay", "duh021"])
 
 async function verificarNomes(nomes) {
     return new Promise((resolve) => {
