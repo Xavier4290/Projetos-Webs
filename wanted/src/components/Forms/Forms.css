@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+form {
+    padding: 2em;
+    background-color: #CCC;
+    width: 350px;
+}

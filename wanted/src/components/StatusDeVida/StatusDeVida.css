@@ -1,0 +1,10 @@
+label, select {
+     display: block;
+}
+
+select {
+    width: 50%;
+    height: 2.1em;
+    box-sizing: border-box;
+    border:1px solid black;
+}

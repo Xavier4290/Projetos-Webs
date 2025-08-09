@@ -1,0 +1,19 @@
+.card-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
+.cards {
+    
+    border: 1px solid black;
+}
+
+.cards-img {
+    border: 1px solid lightblue;
+    border-radius: 100%;
+}

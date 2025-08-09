@@ -1,0 +1,33 @@
+.header {
+    background: #111111;
+    padding: 1.2em;
+    min-width: 450px;
+} 
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    cursor: pointer;
+}
+
+.navigation a {
+    background-color: #fff;
+    color: black;
+    padding: .7em;
+    border-radius: 2px;
+    border: 2px solid #CCC;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+}
+
+.navigation ul li, a{
+    color: #fff;
+}
