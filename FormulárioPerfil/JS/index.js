@@ -124,4 +124,5 @@ btnExcluir.addEventListener("click", (e) => {
     forms.reset();
 
     fotoDePerfil.src = "./img/profile-icon.webp"
+    ulTags.innerHTML = ''
 })
