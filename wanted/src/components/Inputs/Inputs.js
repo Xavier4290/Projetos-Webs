@@ -1,9 +1,13 @@
 import './Inputs.css'
 
 const Inputs = (props) => {
+    const Digitado = (evento) => {
+        props.Alterado(evento.target.value)
+    }
+
     return (
         <label> {props.label}
-            <input type="text" placeholder={props.placeholder}></input>
+            <input type="text" onChange={Digitado} placeholder={props.placeholder}></input>
         </label>
     );
 };

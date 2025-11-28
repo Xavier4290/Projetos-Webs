@@ -1,20 +1,61 @@
 import './Forms.css'
 import Inputs from '../Inputs/Inputs.js'
 import StatusDeVida from '../StatusDeVida/StatusDeVida.js';
+import Botao from '../Btn/btn.js'
+import { useState } from 'react';
 
-const Forms = () => {
-    const status = [
+const Forms = (props) => {
+    const rank = [
         'Vivo ou morto',
         'Somente vivo',
         'Somente morto'
     ]
+
+const [nome, setNome] = useState('')
+const [idade, setIdade] = useState('')
+const [recompensa, setRecompensa] = useState('')
+const [status, setStatus] = useState('')
+
+const salvar = (e) => {
+    e.preventDefault()
+    props.novoForagido({
+        nome,
+        idade,
+        recompensa,
+        status
+    })
+}
+
     return (
         <div className="container">
-            <form>
-                <Inputs label='Nome' placeholder="Nome"/>
-                <Inputs label='Idade' placeholder="Idade"/>
-                <Inputs label='Recompensa' placeholder="100,00"/>
-                <StatusDeVida status={status} label="Vivo ou Morto"/>
+            <form onSubmit={salvar}>
+                <Inputs 
+                    label='Nome' 
+                    placeholder="Nome"
+                    valor = {nome}
+                    Alterado = {nome => setNome(nome)}
+                />
+
+                <Inputs 
+                    label='Idade' 
+                    placeholder="Idade"
+                    valor = {idade}
+                    Alterado = {idade => setIdade(idade)}
+                />
+                <Inputs 
+                    label='Recompensa' 
+                    placeholder="100,00"
+                    valor = {recompensa}
+                    Alterado = {recompensa => setRecompensa(recompensa)}
+                />
+                <StatusDeVida 
+                    status={rank} 
+                    label="Vivo ou Morto"
+                    valor={status}
+                    Alterado = {status => setStatus(status)}
+                />
+
+                <Botao/>
             </form>
         </div>
 
